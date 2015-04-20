@@ -1,0 +1,27 @@
+{
+  "name": "react-travel-planner",
+  "version": "1.0.0",
+  "description": "",
+  "main": "webpack.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rogerfranklin2/react-travel-planner.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rogerfranklin2/react-travel-planner/issues"
+  },
+  "homepage": "https://github.com/rogerfranklin2/react-travel-planner",
+  "devDependencies": {
+    "babel-core": "^5.1.11",
+    "babel-loader": "^5.0.0",
+    "react": "^0.13.2",
+    "react-router": "^0.13.2",
+    "webpack": "^1.8.6",
+    "webpack-dev-server": "^1.8.0"
+  }
+}
