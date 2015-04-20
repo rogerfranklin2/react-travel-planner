@@ -1,4 +1,5 @@
 var webpack = require('webpack');
+var ExtractTextPlugin = require("extract-text-webpack-plugin");
 module.exports = {
     entry: "./js/app.js",
     output: {
@@ -8,7 +9,10 @@ module.exports = {
     module: {
         loaders: [
             { test: /\.js$/, exclude: /node_modules/, loader: 'babel-loader'},
-            { test: /\.css$/, loader: "style!css" }
+            { test: /\.sass/, loader: ExtractTextPlugin.extract('css?sourceMap!sass?indentedSyntax') }
         ]
-    }
+    },
+    plugins: [
+        new ExtractTextPlugin("main.css")
+    ]
 };
