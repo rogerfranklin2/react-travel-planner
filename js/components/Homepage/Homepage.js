@@ -2,10 +2,9 @@ import React from 'react';
 
 import Map from '../Map/Map.js'
 
+export default class ExampleGoogleMap extends React.Component{
 
-var ExampleGoogleMap = React.createClass({
-
-    render: function () {
+    render() {
         return (
             <div className="container">
                 <div className="map">
@@ -18,6 +17,4 @@ var ExampleGoogleMap = React.createClass({
 
         );
     }
-});
-
-module.exports = ExampleGoogleMap;
+}
